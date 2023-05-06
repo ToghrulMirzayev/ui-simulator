@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UI Testing Simulator</title>
+  <link rel="stylesheet" type="text/css" href="drag_and_drop/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="theme/style.css">
+</head>
+<body>
+<div class="toggle-container">
+  <span>Day/Night</span>
+    <label class="toggle-switch">
+      <input type="checkbox" id="toggle-theme">
+      <span class="toggle-slider round"></span>
+    </label>
+  </div>
+  <h1>Drag and Drop</h1>
+  <h3>Complete the word "TESTING" by dragging the cards and dropping them on top of each other</h3>
+  <div class="container">
+    <div class="item" draggable="true" id="item-1">I</div>
+    <div class="item" draggable="true" id="item-2">E</div>
+    <div class="item" draggable="true" id="item-3">T</div>
+    <div class="item" draggable="true" id="item-4">T</div>
+    <div class="item" draggable="true" id="item-5">G</div>
+    <div class="item" draggable="true" id="item-6">N</div>
+    <div class="item" draggable="true" id="item-7">S</div>
+  </div>
+  <div id="target"></div>
+  <div id="message"></div>
+  <div class="bottom-bar">
+    <button onclick="location.href='index.html'" class="back-button">Back</button>
+  </div>
+  <script type="text/javascript" src="drag_and_drop/script.js"></script>
+  <script type="text/javascript" src="theme/script.js"></script>
+</body>
+</html>
