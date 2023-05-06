@@ -3,12 +3,13 @@ It is a simple UI simulator that can be worked on in both manual and automated t
 The simulator is designed for learning. It's an open source project. Feel free to use it for your pet projects and learning activities :)
 
 # Pages
-Below you can find several pages that give you chance to manipulate with UI elements
+Below you can find several pages that give you chance to manipulate with UI elements.
 
 ## Hover and Select
 Here you can hover over the `Select` text to see the dropdown with several options. \
 You can select one of them and go to the particular page. \
-You can return to this page from all pages by clicking `back` button on that pages respectively. 
+You can return to this page from all pages by clicking `back` button on that pages respectively. \
+You can use Day/Night themes and while changing pages selected theme will stay as is. 
 
 ## Drag and Drop
 Here you can drag cards and hover over each other and drop them to replace cards. \
