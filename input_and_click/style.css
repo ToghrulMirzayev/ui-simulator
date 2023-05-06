@@ -1,0 +1,118 @@
+body {
+  background-color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  color: #8bc34a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #e3e0d7;
+}
+
+button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+.item {
+  background-color: #e3e0d7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: #8bc34a;
+  font-weight: bold;
+}
+#addBtn {
+  background-color: #ffc107;
+  color: #fff;
+  cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#addBtn:hover {
+        background-color: #FFA000;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+#deleteBtn {
+  background-color: #8bc34a;
+  color: #fff;
+  cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#deleteBtn:hover {
+        background-color: #689f38;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+.bottom-bar {
+        position: fixed;
+        bottom: 230px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+    .back-button {
+        background-color: #8bc34a;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        border: none
+    }
+    .back-button:hover {
+        background-color: #689f38;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
