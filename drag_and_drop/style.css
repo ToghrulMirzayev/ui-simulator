@@ -150,12 +150,6 @@ h3 {
 }
 
 
-h1:hover {
-  transform: scale(1.05);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-
 body {
   background-color: #fafafa;
   font-family: 'Open Sans', sans-serif;
