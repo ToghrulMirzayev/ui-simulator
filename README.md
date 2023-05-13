@@ -1,6 +1,7 @@
 # UI simulator
 It is a simple UI simulator that can be worked on in both manual and automated testing. \
-The simulator is designed for learning. It's an open source project. Feel free to use it for your pet projects and learning activities :)
+The simulator is designed for learning. It's an open source project. Feel free to use it for your pet projects and learning activities :) \
+URL: https://toghrulmirzayev.github.io/ui-simulator/
 
 # Pages
 Below you can find several pages that give you chance to manipulate with UI elements.
