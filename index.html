@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>UI Testing Simulator</title>
-  <link rel="stylesheet" type="text/css" href="index/style.css">
+  <link rel="stylesheet" type="text/css" href="auth/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="theme/style.css">
 </head>
 <body>
-  <div class="toggle-container">
-    <span>Day/Night</span>
+<div class="toggle-container">
+  <span>Day/Night</span>
     <label class="toggle-switch">
       <input type="checkbox" id="toggle-theme">
       <span class="toggle-slider round"></span>
     </label>
   </div>
   <div class="container">
-    <h1>Hover and Select</h1>
-    <h3>Please hover over "SELECT" and select a page to switch</h3>
-    <div class="dropdown">
-      <div class="select-text">SELECT</div>
-      <div class="dropdown-content">
-          <ul>
-            <li><a href="drag-and-drop.html">Drag and Drop</a></li>
-            <li><a href="input-and-click.html">Input and Click</a></li>
-            <li><a href="checkbox-and-scroll.html">Checkbox and Scroll</a></li>
-            <li><a href="check_and_validate.html">Check and Validate</a></li>
-          </ul>
+    <h1>Authorization</h1>
+    <form id="loginForm" onsubmit="return validateForm()">
+      <div class="input-container">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
       </div>
-    </div>
-  </div>
+      <div class="input-container">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <h3>Valid credentials</h3>
+      <h4><span class="colored-text">Username: </span> correct_user</h4>
+      <h4><span class="colored-text">Password:</span> correct_password</h4>
+      <div class="button-container">
+        <button class="login-button">Log In</button>
+      </div>
+    </form>
+    <p id="message"></p>
+    <script type="text/javascript" src="auth/script.js"></script>
     <script type="text/javascript" src="theme/script.js"></script>
+  </div>
 </body>
 </html>
