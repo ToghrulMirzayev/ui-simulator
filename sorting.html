@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>UI Testing Simulator</title>
+    <link rel="stylesheet" type="text/css" href="sorting/style.css" />
+    <link rel="stylesheet" type="text/css" href="theme/style.css" />
+    <link rel="icon" type="image/x-icon" href="theme/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="toggle-container">
+      <span>Day/Night</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggle-theme" />
+        <span class="toggle-slider round"></span>
+      </label>
+    </div>
+    <h1>Sorting</h1>
+    <h3>Sort data in below table by columns</h3>
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Age</th>
+          <th onclick="sortTable(2)">Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td>Helene</td>
+          <td>26</td>
+          <td>AQA</td>
+        </tr>
+        <tr>
+          <td>Mark</td>
+          <td>35</td>
+          <td>PM</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>28</td>
+          <td>DevOps</td>
+        </tr>
+        <tr>
+          <td>Will</td>
+          <td>27</td>
+          <td>BA</td>
+        </tr>
+        <tr>
+          <td>Antoine</td>
+          <td>24</td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td>Justin</td>
+          <td>22</td>
+          <td>QA</td>
+        </tr>
+        <tr>
+          <td>Sergio</td>
+          <td>36</td>
+          <td>Lead Developer</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="button-container">
+      <button
+        onclick="location.href='hover_and_select.html'"
+        class="back-button"
+      >
+        Back
+      </button>
+    </div>
+    <script type="text/javascript" src="sorting/script.js"></script>
+    <script type="text/javascript" src="theme/script.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">By Toghrul Mirzayev</div>
+      </div>
+    </footer>
+  </body>
+</html>
