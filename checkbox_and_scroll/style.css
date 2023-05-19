@@ -1,6 +1,6 @@
 body {
   background-color: #fafafa;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #444;
 }
 
@@ -9,10 +9,7 @@ body {
 }
 
 .frame {
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   height: 200px;
   width: 300px;
   border: 1px solid green;
@@ -47,11 +44,18 @@ h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h3 {
   text-align: center;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .back-button {
@@ -65,10 +69,12 @@ h3 {
   transition: all 0.3s ease-in-out;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border: none;
-  position: absolute;
-  bottom: -250px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .back-button:hover {
@@ -83,11 +89,12 @@ h3 {
   padding: 10px 20px;
   border-radius: 5px;
   border: none !important;
-}
-
-#counter-frame {
   margin-left: 20px;
   padding: 10px;
   border: 1px solid black;
   display: inline-block;
+  position: absolute;
+  top: 150px;
+  right: 75%;
+  transform: translateX(-50%);
 }

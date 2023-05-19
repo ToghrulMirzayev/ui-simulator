@@ -3,7 +3,6 @@ body {
   color: #000;
 }
 
-
 body.night-mode {
   background-color: #240128;
   color: #fff;
@@ -38,7 +37,7 @@ body.night-mode {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .toggle-slider:before {
@@ -49,7 +48,7 @@ body.night-mode {
   left: 2px;
   bottom: 2px;
   background-color: white;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .toggle-slider {
@@ -68,6 +67,30 @@ input:checked + .toggle-slider:before {
   border-radius: 50%;
 }
 .toggle-container span {
-color: #8bc34a;
-font-weight: bold
+  color: #8bc34a;
+  font-weight: bold;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-container {
+  text-align: center;
+  font-size: 36px;
+  color: #8bc34a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #689f38;
+  display: inline-block;
+  border: 1px solid #689f38;
+  padding: 10px;
+}
+
+.footer-content {
+  font-size: 14px;
 }

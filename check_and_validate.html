@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>UI Testing Simulator</title>
-  <link rel="stylesheet" type="text/css" href="check_and_validate/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="theme/style.css">
-  <link rel="icon" type="image/x-icon" href="theme/favicon.ico">
-</head>
-<body>
-  <div class="toggle-container">
-    <span>Day/Night</span>
-    <label class="toggle-switch">
-      <input type="checkbox" id="toggle-theme">
-      <span class="toggle-slider round"></span>
-    </label>
-  </div>
-  <div class="container">
-    <h1>Check and Validate</h1>
-    <h2>Check correctness of value</h2>
-    <h3><span class="colored-text">Tip:</span> Only positive integers in range between 10 and 50 are considered valid</h3>
-    <div class="validation-square valid" id="validationSquare"></div>
-    <div class="input-container">
-      <input type="text" id="dataInput" placeholder="Enter a value">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UI Testing Simulator</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="check_and_validate/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="theme/style.css" />
+    <link rel="icon" type="image/x-icon" href="theme/favicon.ico" />
+  </head>
+  <body>
+    <div class="toggle-container">
+      <span>Day/Night</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggle-theme" />
+        <span class="toggle-slider round"></span>
+      </label>
     </div>
-  </div>
-  <div class="button-container">
-    <button onclick="location.href='hover_and_select.html'" class="back-button">Back</button>
-  </div>
-  <script type="text/javascript" src="check_and_validate/script.js"></script>
-  <script type="text/javascript" src="theme/script.js"></script>
-</body>
+    <div class="container">
+      <h1>Check and Validate</h1>
+      <h2>Check correctness of value</h2>
+      <h3>
+        <span class="colored-text">Tip:</span> Only positive integers in range
+        between 10 and 50 are considered valid
+      </h3>
+      <div class="validation-square valid" id="validationSquare"></div>
+      <div class="input-container">
+        <input type="text" id="dataInput" placeholder="Enter a value" />
+      </div>
+    </div>
+    <div class="button-container">
+      <button
+        onclick="location.href='hover_and_select.html'"
+        class="back-button"
+      >
+        Back
+      </button>
+    </div>
+    <script type="text/javascript" src="check_and_validate/script.js"></script>
+    <script type="text/javascript" src="theme/script.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">By Toghrul Mirzayev</div>
+      </div>
+    </footer>
+  </body>
 </html>
