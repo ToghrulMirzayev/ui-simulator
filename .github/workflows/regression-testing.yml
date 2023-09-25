@@ -13,5 +13,4 @@ jobs:
         token: ${{ secrets.REPO_ACCESS }}
         repository: ToghrulMirzayev/ui-simulator-js-testing
         event-type: run-tests
-        workflow_file_name: playwright.yml
         client-payload: '{"github": ${{ toJson(github) }}}'
