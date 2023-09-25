@@ -16,3 +16,4 @@ jobs:
         token: ${{ secrets.REPO_ACCESS }}
         repository: ToghrulMirzayev/ui-simulator-js-testing
         event-type: run-tests
+        client-payload: '{"github": ${{ toJson(github) }}}'
