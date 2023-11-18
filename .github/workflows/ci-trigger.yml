@@ -1,0 +1,16 @@
+name: CI Trigger
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update from main codebase
+        run: |
+          curl -X POST https://api.github.com/repos/ToghrulMirzayev/ui-simulator-js-testing/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ToghrulMirzayev:${{ secrets.REPO_TOKEN }} \
+          --data '{"event_type": "ping", "client_payload": { "repository": "arst" }}'
