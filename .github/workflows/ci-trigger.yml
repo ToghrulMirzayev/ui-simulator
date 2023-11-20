@@ -8,9 +8,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Update from main codebase
+      - name: JS testing trigger
         run: |
           curl -X POST https://api.github.com/repos/ToghrulMirzayev/ui-simulator-js-testing/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ToghrulMirzayev:${{ secrets.REPO_ACCESS }} \
+          --data '{"event_type": "ping", "client_payload": { "repository": "arst" }}'
+      - name: Python testing trigger
+        run: |
+          curl -X POST https://api.github.com/repos/ToghrulMirzayev/ui-simulator-python-testing/dispatches \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ToghrulMirzayev:${{ secrets.REPO_ACCESS }} \
           --data '{"event_type": "ping", "client_payload": { "repository": "arst" }}'
