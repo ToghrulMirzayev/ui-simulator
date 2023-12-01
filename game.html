@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UI Testing Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="auth/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="theme/style.css" />
+    <link rel="stylesheet" type="text/css" href="game/style.css" />
+    <link rel="icon" type="image/x-icon" href="theme/favicon.ico" />
+  </head>
+  <body>
+    <div class="toggle-container">
+      <span>Day/Night</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggle-theme" />
+        <span class="toggle-slider round"></span>
+      </label>
+    </div>
+    <div class="container">
+      <h1>Game</h1>
+      <h3>
+        <span class="colored-text">Configuration:</span>
+        Max number and max attempt should be more than 0 and can't be empty
+      </h3>
+      <div id="gameConfig" class="input-container">
+        <label for="maxNumber">Set Max Number:</label>
+        <input type="number" id="maxNumber" />
+        <label for="maxAttempts">Set Max Attempts:</label>
+        <input type="number" id="maxAttempts" />
+        <button id="startBtn">Start Game</button>
+        <p id="errorConfigMessage" style="display: none;"></p>
+      </div>
+      <div id="gameArea" style="display: none;">
+        <div class="input-container">
+          <label for="guess">Enter Your Guess:</label>
+          <input type="number" id="guess" />
+        </div>
+        <button id="playBtn">Check Guess</button>
+        <button id="backConfigBtn">Back to Config</button>
+        <p id="resultMessage"></p>
+        <p id="attemptsMessage"></p>
+        <p id="errorMessage" style="display: none;"></p>
+      </div>
+    </div>
+    <div class="button-container">
+      <button
+        onclick="location.href='hover_and_select.html'"
+        class="back-button"
+      >
+        Back
+      </button>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">By Toghrul Mirzayev</div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="game/script.js"></script>
+    <script type="text/javascript" src="theme/script.js"></script>
+  </body>
+</html>
