@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Operations</title>
+    <link rel="stylesheet" href="async_operations/style.css">
+    <link rel="stylesheet" type="text/css" href="theme/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="theme/favicon.ico" />
+    <script src="async_operations/script.js" defer></script>
+</head>
+<body>
+    <div class="toggle-container">
+        <span>Day/Night</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="toggle-theme">
+            <span class="toggle-slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>Asynchronous Operations</h1>
+        <h3 class="subtitle">Try to work with async operations</h3>
+        <section class="async-section">
+            <h2>Data Loading</h2>
+            <div class="input-container">
+                <label for="loadingDelay">Delay (seconds):</label>
+                <input type="number" id="loadingDelay" min="1" max="50" value="5" class="input-field">
+                <div id="delayError" class="error-message"></div>
+            </div>
+            <button id="loadDataBtn" class="btn">Load Data</button>
+            <div id="loadingIndicator" class="loading-indicator"></div>
+            <span id="checkIcon" class="check-icon">✓</span>
+            <div id="loadedData" class="data-container"></div>
+        </section>
+
+        <section class="async-section">
+            <h2>Autocomplete</h2>
+            <p class="hint">Start typing a programming language name (e.g., "Java" or "Py")</p>
+            <input type="text" id="autocompleteInput" class="input-field" placeholder="Enter text...">
+            <ul id="autocompleteList" class="autocomplete-list"></ul>
+        </section>
+
+        <section class="async-section">
+            <h2>Infinite Scroll</h2>
+            <ul id="infiniteScrollList" class="infinite-scroll-list"></ul>
+        </section>
+
+        <section class="async-section">
+            <h2>Delayed Form Submission</h2>
+            <form id="delayedForm">
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div id="formSubmitStatus" class="status-message"></div>
+        </section>
+
+        <section class="async-section">
+            <h2>Error Handling</h2>
+            <button id="errorBtn" class="btn">Trigger Error</button>
+            <div id="errorMessage" class="error-message"></div>
+        </section>
+    </div>
+    <div class="button-container">
+        <button onclick="location.href='hover_and_select.html'" class="back-button">Back</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">By Toghrul Mirzayev</div>
+        </div>
+    </footer>
+</body>
+</html>

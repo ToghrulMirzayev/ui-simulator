@@ -1,20 +1,16 @@
-const toggleTheme = document.querySelector("#toggle-theme");
-const body = document.body;
-const localStorageKey = "theme";
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleTheme = document.getElementById('toggle-theme');
 
-const currentTheme = localStorage.getItem(localStorageKey);
+    function setTheme(isNightMode) {
+        document.body.classList.toggle('night-mode', isNightMode);
+        toggleTheme.checked = isNightMode;
+        localStorage.setItem('nightMode', isNightMode);
+    }
 
-if (currentTheme) {
-  body.classList.add(currentTheme);
-  toggleTheme.checked = currentTheme === "night-mode";
-}
+    const savedNightMode = localStorage.getItem('nightMode') === 'true';
+    setTheme(savedNightMode);
 
-toggleTheme.addEventListener("change", function () {
-  if (this.checked) {
-    body.classList.add("night-mode");
-    localStorage.setItem(localStorageKey, "night-mode");
-  } else {
-    body.classList.remove("night-mode");
-    localStorage.setItem(localStorageKey, "day-mode");
-  }
+    toggleTheme.addEventListener('change', () => {
+        setTheme(toggleTheme.checked);
+    });
 });
