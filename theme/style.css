@@ -94,3 +94,27 @@ footer {
 .footer-content {
   font-size: 14px;
 }
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body.night-mode h1 {
+    color: #8bc34a;
+}
+
+body.night-mode .subtitle {
+    color: #ccc;
+}

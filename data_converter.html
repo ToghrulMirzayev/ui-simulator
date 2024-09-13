@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Converter</title>
+    <link rel="stylesheet" href="data_converter/style.css">
+    <link rel="stylesheet" type="text/css" href="theme/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="theme/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="data_converter/script.js" defer></script>
+</head>
+<body>
+    <div class="toggle-container">
+        <span>Day/Night</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="toggle-theme">
+            <span class="toggle-slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>Data Converter</h1>
+        <h3 class="subtitle">Convert between JSON and YAML formats</h3>
+        
+        <div class="converter-container">
+            <div class="input-area">
+                <textarea id="inputData" placeholder="Enter your data here (JSON or YAML)"></textarea>
+            </div>
+            <div class="conversion-buttons">
+                <button id="toJson" class="btn">To JSON</button>
+                <button id="toYaml" class="btn">To YAML</button>
+            </div>
+            <div class="output-area">
+                <textarea id="outputData" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="location.href='hover_and_select.html'" class="back-button">Back</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">By Toghrul Mirzayev</div>
+        </div>
+    </footer>
+</body>
+</html>

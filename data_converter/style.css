@@ -1,0 +1,137 @@
+.converter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.input-area, .output-area {
+    width: 45%;
+}
+
+.output-area {
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.conversion-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    resize: vertical;
+    overflow-y: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 12px;
+    transition: width 0.3s ease;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+    border: 3px solid #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    width: 20px;
+    border: 1px solid #f1f1f1;
+}
+
+textarea:hover::-webkit-scrollbar {
+    width: 20px;
+}
+
+body.night-mode textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.night-mode textarea::-webkit-scrollbar-track {
+    background: #333;
+}
+
+body.night-mode textarea::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border: 3px solid #333;
+}
+
+body.night-mode textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    border: 1px solid #333;
+}
+
+.btn {
+    margin: 5px 0;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+body.night-mode .btn {
+    background-color: #45a049;
+}
+
+body.night-mode .btn:hover {
+    background-color: #4CAF50;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+body.night-mode .back-button {
+    background-color: #45a049;
+    color: white;
+}
+
+body.night-mode .back-button:hover {
+    background-color: #4CAF50;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
