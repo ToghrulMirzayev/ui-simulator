@@ -28,17 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
     loadDataBtn.addEventListener('click', async () => {
         if (!validateDelay()) return;
 
-        const delay = parseInt(loadingDelay.value, 10) * 1000;
+        const maxDelay = parseInt(loadingDelay.value, 10) * 1000;
+        const randomDelay = Math.round(Math.random() * (maxDelay - 1000)) + 1000;
         
         loadingIndicator.style.display = 'inline-block';
         checkIcon.style.display = 'none';
         loadedData.textContent = '';
         
         try {
-            await simulateAsyncRequest(delay);
+            await simulateAsyncRequest(randomDelay);
             loadingIndicator.style.display = 'none';
             checkIcon.style.display = 'inline-block';
-            loadedData.textContent = `Data successfully loaded after ${delay / 1000} seconds!`;
+            loadedData.textContent = `Data successfully loaded after ${Math.round(randomDelay / 1000)} seconds!`;
         } catch (error) {
             loadedData.textContent = 'Error loading data.';
         }
